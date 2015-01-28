@@ -6,7 +6,7 @@ class profile::base {
 
   file { '/etc/environment':
     ensure => file,
-    content => "${::environment}\n",
+    content => "Ich hasse Puppet!\n",
   }
 
 }
