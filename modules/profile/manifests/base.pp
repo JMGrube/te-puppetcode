@@ -8,5 +8,9 @@ class profile::base {
     ensure => file,
     content => "This is gabe's machine.\n",
   }
+  file { 'C:\gabe_template.txt':
+    ensure => file,
+    content => template('profile/gabe_template.txt.erb'),
+  }
 
 }
