@@ -4,9 +4,9 @@
 
 class profile::base {
 
-  file { '/etc/environment':
+  file { 'C:\PaulF.txt':
     ensure => file,
-    content => "${::environment}\n",
+    content => "Monkey Business",
   }
 
 }
